@@ -1,0 +1,20 @@
+{
+  "name": "sass-template",
+  "version": "0.1.0",
+  "description": "Template to start sass project.",
+  "scripts": {
+    "build": "rimraf dist && sass --source-map src/:dist/css/",
+    "build:minify": "sass --style compressed src/:dist/css/example.min.css",
+    "lint": "stylelint \"src/**/*.scss\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Achmad F. Ibrahim",
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "sass": "^1.29.0",
+    "stylelint": "^13.8.0",
+    "stylelint-config-sass-guidelines": "^7.1.0",
+    "stylelint-config-standard": "^20.0.0"
+  }
+}
